@@ -1,0 +1,17 @@
+# Ignora la carpeta "vendor" y todos sus contenidos
+/vendor/
+
+# Ignora archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignora archivos de configuración de IDEs comunes
+.idea/
+
+# Ignora archivos de caché y registro (ajusta según tu aplicación)
+/cache/
+/logs/
+
+# Ignora archivos de configuración sensibles (ajusta según tus necesidades)
+config/database.php
+config/secret.key
