@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/components.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+
+    <!-- Scripts -->
+    <script src="components/test_components/simple-buttons.js"></script>
+    <script src="components/test_components/info-card.js"></script>
+    <script src="components/test_components/custom-counter.js"></script>
+
+    <title>Web Component samples</title>
+    
+</head>
+<body>
+    <h1>Button Elements</h1>
+
+    <div class="button-container">
+        <boton-personalizado1></boton-personalizado1>
+        <boton-personalizado2></boton-personalizado2>
+        <boton-confeti></boton-confeti>
+    </div>
+
+    <br><br>
+
+    <h1>Image-card Element</h1>
+
+    <div class="card-container">
+        <info-card>
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Catedral_SLP_cielo.jpg/1200px-Catedral_SLP_cielo.jpg" ></img> -->
+            <img src="img/slp.jpeg" alt="San Luis Potosí">
+            <div slot="message">
+                <h4>San luis potosi</h4>
+                <ul>
+                    <li>Área metropolitana: Zona metropolitana de San Luis Potosí</li>
+                    <li>Población: 824,229 (2015)</li>
+                    <li>Superficie: 385 km²</li>
+                </ul>
+            </div>
+        </info-card>
+    </div>
+
+    <br><br>
+</body>
+</html>

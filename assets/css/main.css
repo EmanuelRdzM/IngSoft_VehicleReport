@@ -82,6 +82,17 @@ html, body {
       height: auto;
       min-height: 100%; } }
 
+/* Estilos para los elementos de formulario */
+.form-group {
+  margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+/* Estilos para el botón personalizado */
+submit-button {
+  margin-top: 10px; /* Espacio entre el botón y los campos de entrada */
+}
+
+
 body {
   display: -moz-flex;
   display: -webkit-flex;
@@ -118,6 +129,11 @@ body {
   @media screen and (max-width: 360px) {
     body {
       padding: 5em 1.25em 1.25em 1.25em; } }
+
+#myDialog {
+  position: relative;
+  z-index: 1000;
+}
 
 /* BG */
 #bg {

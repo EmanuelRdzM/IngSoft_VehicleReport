@@ -592,6 +592,8 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  position: relative; /* Establecer la posición relativa para que z-index funcione */
+  z-index: 999; /* Establecer un z-index menor que el del diálogo */
 }
 
 .no-gutters {

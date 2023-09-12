@@ -132,6 +132,6 @@ $conexion = mysqli_connect("localhost","root","") or die("Problemas en la conexi
 
            
 
-           echo " <a class='btn1' href='/pagina1.php'>Regresar</a>";
+           echo " <a class='btn1' href='pagina1.php'>Regresar</a>";
 
 ?>

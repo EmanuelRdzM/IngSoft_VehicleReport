@@ -9,6 +9,7 @@
 		<title>SSPC Login in</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -21,11 +22,17 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form action="loguear.php"  method="post" id="">
+		<form action="loguear.php" method="post" id="login-form">
+			<div class="form-group">
 				<input type="text" name="user" id="user" placeholder="Usuario" />
+			</div>
+			<div class="form-group">
 				<input type="password" name="password" id="password" placeholder="Contraseña" />
-				<input type="submit" value="iniciar seseion">
-			</form>
+			</div>
+			<div class="form-group">
+				<submit-button text="Iniciar sesión"></submit-button>
+			</div>
+		</form>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -42,6 +49,7 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
+			<script src="components/submit-button.js"></script>
 
 	</body>
 </html>

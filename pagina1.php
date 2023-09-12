@@ -21,6 +21,8 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <script src="https://unpkg.com/@generic-components/components@latest/dialog.js" type="module"></script>
+  
 
   <title>SSP</title>
 
@@ -35,10 +37,26 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- SCRIPTS -->
+  <script src="components/contact-info.js"></script>
+  <script type="module" src="node_modules/polymer/polymer-element.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .icon-container {
+            text-align: center;
+        }
+        .icon {
+            font-size: 2rem;
+            margin: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
-
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -113,7 +131,57 @@ Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad,
         
     <!-- end slider section -->
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div>
+    <show-info-btn id="custom-button" text="¿Qué es es el phishing?">
+      <h2>¿Qué es es el phishing?</h2>
+      <p>
+      El phishing es una técnica de ingeniería social que consiste en el 
+      envío de correos electrónicos que suplantan la identidad de compañías 
+      u organismos públicos y solicitan información personal y bancaria al usuario.
+      </p>
+    </show-info-btn>
+
+    <show-info-btn id="custom-button" text="Ciberseguridad Ciudadana">
+      <p>
+        Este tema destaca la misión de prevenir y auxiliar a las personas en situaciones de riesgo en Internet. 
+        Explora cómo las acciones de ciberseguridad pueden contribuir a la seguridad de la comunidad en línea y su integridad física y financiera
+      </p>
+    </show-info-btn>
+
+    <show-info-btn id="custom-button" text="Wi-fi Gratis & Seguridad en la nuve">
+      <h2>Wi-Fi Público:</h2>
+        <ul>
+            <li>Riesgo para la seguridad y privacidad: Al usar Wi-Fi público, 
+              tus datos pueden ser vulnerables a la interceptación por parte de ciberdelincuentes, 
+              lo que podría poner en riesgo tu seguridad en línea y la privacidad de tu información.</li>
+        </ul>
+        <h2>Seguridad en la Nube:</h2>
+        <ul>
+            <li>Importante para proteger datos y servicios en línea: La seguridad en la nube es 
+              esencial para mantener seguros tus datos y servicios en línea. Utilizar contraseñas 
+              fuertes y la autenticación de dos factores son medidas fundamentales para proteger tus activos digitales.</li>
+        </ul>
+    </show-info-btn>
+
+    <show-info-btn id="custom-button" text="Ciberseguridad">
+        <h2>Título de Ciberseguridad</h2>
+        <p>La ciberseguridad es vital para proteger tus datos y sistemas contra amenazas en línea. Mantente seguro en el mundo digital.</p>
+        <div class="icon-container">
+            <i class="fas fa-shield-alt icon"></i>
+            <i class="fas fa-lock icon"></i>
+            <i class="fas fa-key icon"></i>
+        </div>
+        <a href="https://www.ejemplo.com/opinion-seguridad">Leer más sobre seguridad</a>
+    </show-info-btn>
+
+  </div>
+  
+  
+
+  <script src="components/show-info.js"></script>
+
+  <br><br><br><br><br><br>
   <section class="about_section layout_padding">
     <div class="container">
       <div class="heading_container">
@@ -135,7 +203,7 @@ Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad,
   <section class="about_section layout_padding">
     <div class="container">
       <div class="heading_container">
-          <br><br><br><br>
+          <br>
         <style>
           table {
               border-collapse: separate;
@@ -381,7 +449,6 @@ Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad,
         echo "
         <div tabindex='-1' id='tablas'>
         <h2>
-        <br><br><br>
           Solicitudes procesadas
         </h2>
         </div>
@@ -543,40 +610,30 @@ Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad,
   </section>
 
   <!-- about section -->
-
-  
-
-  <section class="contact_section layout_padding">
-    
+  <!-- <div class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Contáctanos
-        </h2>
+        <h2>Contáctanos</h2>
       </div>
       <div class="">
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <form action="">
+            <form id="contactForm" action="inst_dt_r.php" method="POST">
               <div class="contact_form-container">
                 <div>
-                  <div>
-                    <input type="text" placeholder="Name">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Phone Number">
-                  </div>
-                  <div>
-                    <input type="email" placeholder="Email">
-                  </div>
-                  <div class="">
-                    <input type="text" placeholder="Message" class="message_input">
-                  </div>
-                  <div class=" d-flex justify-content-center ">
-                    <button type="submit" onclik="inst_dt_r.php">
-                      Envía
-                    </button>
-                  </div>
+                  <input type="text" placeholder="Name" name="name">
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone Number" name="phone">
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="">
+                  <input type="text" placeholder="Message" class="message_input" name="message">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit">Envía</button>
                 </div>
               </div>
             </form>
@@ -584,10 +641,10 @@ Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad,
         </div>
       </div>
     </div>
-  </section>
-
+  </div> -->
 
   <!-- end contact section -->
+  <contact-form></contact-form>
 
 
   <!-- info section -->
