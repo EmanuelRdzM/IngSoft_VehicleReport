@@ -2,7 +2,15 @@
 node_modules/
 package-lock.json
 yarn.lock
+bower_components/
+dist/
 /vendor/
+
+# Archivos generados por Polymer CLI
+polymer.json
+.bowerrc
+.bower.json
+.bower/
 
 # Ignora archivos generados por el sistema operativo
 .DS_Store

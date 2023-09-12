@@ -1,0 +1,46 @@
+/* Estilo para el contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    gap: 10px; /* Agrega un espacio entre los elementos */
+}
+
+/* Estilo para el contenedor de info-card */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Estilo para los títulos */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo para el mensaje dentro de info-card */
+.card-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-container li {
+    margin-bottom: 10px;
+}

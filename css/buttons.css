@@ -1,0 +1,20 @@
+/* Estilos para la animación de confeti */
+@keyframes confeti-fall {
+    0%, 100% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(100vh);
+    }
+}
+
+.confeti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f00; /* Color del confeti (rojo) */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    animation: confeti-fall 3s linear infinite;
+    left: var(--confeti-x);
+    top: var(--confeti-y);
+}

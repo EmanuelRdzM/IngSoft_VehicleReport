@@ -2,6 +2,24 @@ $white: #ffffff;
 $primary1: #0fcfdc;
 $black:#000000;
 
+/* Estilos para el botón "Cerrar sesión" */
+#myDialog #closeSesion {
+  background-color: green; /* Fondo verde */
+  color: white; /* Texto blanco */
+}
+
+/* Estilos para el botón "Cancelar" */
+#myDialog #closebtn {
+  background-color: red; /* Fondo rojo */
+  color: white; /* Texto blanco */
+}
+
+/* Estilos para el div con slot="content" */
+#myDialog [slot="content"] {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
 
 @mixin main-font {
   font-family: 'Poppins', sans-serif;
@@ -286,6 +304,21 @@ a:focus {
 
 
   }
+
+  .img-box {
+    position: absolute; /* Establece la posición en relativa para que z-index funcione */
+    z-index: 999; /* Establece un z-index menor para la imagen */
+  }
+
+  img {
+    position: absolute; /* Establece la posición en relativa para que z-index funcione */
+    z-index: 999; /* Establece un z-index menor para la imagen */
+  }
+  
+  .img-box img {
+    width: 100%;
+  }
+
 
   .img-box {
     img {

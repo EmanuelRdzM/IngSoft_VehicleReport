@@ -1,0 +1,4 @@
+#myDialog {
+    position: relative;
+    z-index: 1000;
+}

@@ -46,6 +46,8 @@
 
   .about_section .box .img-box {
     width: 40%;
+    position: relative; /* Establecer la posición relativa para que z-index funcione */
+  z-index: 999; /* Establecer un z-index menor que el del diálogo */
   }
 
   .portfolio_section .portfolio_container {
