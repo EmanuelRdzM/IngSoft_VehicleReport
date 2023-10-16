@@ -4,6 +4,12 @@ body {
   background-color: #ffffff;
 }
 
+.container-section {
+  margin-top: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
 .layout_padding {
   padding: 90px 0;
 }
@@ -69,7 +75,7 @@ body {
 
 /*header section*/
 .hero_area {
-  height: 136vh;
+  height: auto;
   position: relative;
   background-image: url(../images/hero-bg.png);
   background-size: cover;

@@ -69,7 +69,7 @@ body {
 
 /*header section*/
 .hero_area {
-  height: 136vh;
+  height: auto;
   position: relative;
   background-image: url(../images/hero-bg.png);
   background-size: cover;

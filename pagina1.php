@@ -132,55 +132,6 @@ Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad,
     <!-- end slider section -->
   </div>
 
-  <div>
-    <show-info-btn id="custom-button" text="¿Qué es es el phishing?">
-      <h2>¿Qué es es el phishing?</h2>
-      <p>
-      El phishing es una técnica de ingeniería social que consiste en el 
-      envío de correos electrónicos que suplantan la identidad de compañías 
-      u organismos públicos y solicitan información personal y bancaria al usuario.
-      </p>
-    </show-info-btn>
-
-    <show-info-btn id="custom-button" text="Ciberseguridad Ciudadana">
-      <p>
-        Este tema destaca la misión de prevenir y auxiliar a las personas en situaciones de riesgo en Internet. 
-        Explora cómo las acciones de ciberseguridad pueden contribuir a la seguridad de la comunidad en línea y su integridad física y financiera
-      </p>
-    </show-info-btn>
-
-    <show-info-btn id="custom-button" text="Wi-fi Gratis & Seguridad en la nuve">
-      <h2>Wi-Fi Público:</h2>
-        <ul>
-            <li>Riesgo para la seguridad y privacidad: Al usar Wi-Fi público, 
-              tus datos pueden ser vulnerables a la interceptación por parte de ciberdelincuentes, 
-              lo que podría poner en riesgo tu seguridad en línea y la privacidad de tu información.</li>
-        </ul>
-        <h2>Seguridad en la Nube:</h2>
-        <ul>
-            <li>Importante para proteger datos y servicios en línea: La seguridad en la nube es 
-              esencial para mantener seguros tus datos y servicios en línea. Utilizar contraseñas 
-              fuertes y la autenticación de dos factores son medidas fundamentales para proteger tus activos digitales.</li>
-        </ul>
-    </show-info-btn>
-
-    <show-info-btn id="custom-button" text="Ciberseguridad">
-        <h2>Título de Ciberseguridad</h2>
-        <p>La ciberseguridad es vital para proteger tus datos y sistemas contra amenazas en línea. Mantente seguro en el mundo digital.</p>
-        <div class="icon-container">
-            <i class="fas fa-shield-alt icon"></i>
-            <i class="fas fa-lock icon"></i>
-            <i class="fas fa-key icon"></i>
-        </div>
-        <a href="https://www.ejemplo.com/opinion-seguridad">Leer más sobre seguridad</a>
-    </show-info-btn>
-
-  </div>
-  
-  
-
-  <script src="components/show-info.js"></script>
-
   <br><br><br><br><br><br>
   <section class="about_section layout_padding">
     <div class="container">

@@ -1,21 +1,3 @@
-<!--
-<?php 
-    session_start();
-    $correo = $_SESSION['username'];
-        
-    if($correo==null || $correo==''){
-        //phpinfo();
-           
-        echo '<script type="text/javascript">
-            alert("Esta herramienta requiere un inicio de sesion. Por favor autentifiquise");
-            window.location.replace("https://mondongoproyecto.com/INGENIERIAS1/index.html");
-        </script>';
-        
-    }
-    
-?>
--->
-
 <!DOCTYPE html>
 <html>
 
@@ -43,6 +25,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script src="js/iniciarReporte.js"></script>
 </head>
 
 <body>
@@ -68,9 +52,6 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                   <ul class="navbar-nav  ">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="index.html">CERRAR SESIÓN <span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
                       <a class="nav-link" href="--"> Sobre nosotros</a>
                     </li>
@@ -88,136 +69,108 @@
       </div>
     </header>
     <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section position-relative">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-5 offset-md-1 ">
-                  <div class="detail_box">
-                    <h1>
-                      Seguridad Cibernética <br>
-                      SSPC
-                    </h1>
-                    <p>
-                      Nuestra misión es prevenir y auxiliar a las y los ciudadanos de cualquier situación que ponga en riesgo su integridad física y patrimonial, en la red pública de internet.
-Debido al incremento del uso de internet y los dispositivos móviles, 
-Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad, es decir, transmitimos conocimientos de prevención, respeto y autociudado al navegar de forma segura en la web.
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-6 px-0">
-                  <div class="img-box">
-                    <img src="images/slider-img2.jpg" alt="" >
-                  </div>
-                </div>
+
+    <div class="container-section">
+      <section class=" slider_section-1 position-relative">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">  
+                <h1>
+                  Seguridad Cibernética <br>
+                  SSPC
+                </h1>
+                <p>
+                  Nuestra misión es prevenir y auxiliar a las y los ciudadanos de cualquier situación que ponga en riesgo su integridad física y patrimonial, en la red pública de internet.
+                  Debido al incremento del uso de internet y los dispositivos móviles, 
+                    Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad, es decir, transmitimos conocimientos de prevención, respeto y autociudado al navegar de forma segura en la web.
+                </p>  
               </div>
             </div>
           </div>
-         
-        
-    <!-- end slider section -->
-  </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        
-      </div>
-      <div class="box">
-        <div class="img-box">
-          <img src="images/ok1.png" alt="">
-          <div class="about_img-bg">
-            <img src="images/logo1.png" alt="">
-          </div>
         </div>
+      </section>
+  
+      <section class=" slider_section-2 position-relative">
+        <div >
+          <show-info-btn id="custom-button" text="¿Qué es es el phishing?">
+            <h2>¿Qué es es el phishing?</h2>
+            <p>
+            El phishing es una técnica de ingeniería social que consiste en el 
+            envío de correos electrónicos que suplantan la identidad de compañías 
+            u organismos públicos y solicitan información personal y bancaria al usuario.
+            </p>
+          </show-info-btn>
       
-      </div>
+          <show-info-btn id="custom-button" text="Ciberseguridad Ciudadana">
+            <h2>Ciberseguridad:</h2>
+            <p>
+              Este tema destaca la misión de prevenir y auxiliar a las personas en situaciones de riesgo en Internet. 
+              Explora cómo las acciones de ciberseguridad pueden contribuir a la seguridad de la comunidad en línea y su integridad física y financiera
+            </p>
+          </show-info-btn>
+      
+          <show-info-btn id="custom-button" text="Wi-fi Gratis & Seguridad en la nuve">
+            <h2>Wi-Fi Público:</h2>
+              <ul>
+                  <li>Riesgo para la seguridad y privacidad: Al usar Wi-Fi público, 
+                    tus datos pueden ser vulnerables a la interceptación por parte de ciberdelincuentes, 
+                    lo que podría poner en riesgo tu seguridad en línea y la privacidad de tu información.</li>
+              </ul>
+              <h2>Seguridad en la Nube:</h2>
+              <ul>
+                  <li>Importante para proteger datos y servicios en línea: La seguridad en la nube es 
+                    esencial para mantener seguros tus datos y servicios en línea. Utilizar contraseñas 
+                    fuertes y la autenticación de dos factores son medidas fundamentales para proteger tus activos digitales.</li>
+              </ul>
+          </show-info-btn>
+      
+          <show-info-btn id="custom-button" text="Ciberseguridad">
+              <h2>Título de Ciberseguridad</h2>
+              <p>La ciberseguridad es vital para proteger tus datos y sistemas contra amenazas en línea. Mantente seguro en el mundo digital.</p>
+              <div class="icon-container">
+                  <i class="fas fa-shield-alt icon"></i>
+                  <i class="fas fa-lock icon"></i>
+                  <i class="fas fa-key icon"></i>
+              </div>
+              <a href="https://www.ejemplo.com/opinion-seguridad">Leer más sobre seguridad</a>
+          </show-info-btn>
+      
+        </div>
+      </section>
     </div>
-
-  </section>
-
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-          <br><br><br><br>
-        <style>
-          table {
-              border-collapse: separate;
-          }
-          tr{
-            border: 5px solid black ;
-          }
-          tr{
-            border: black  5px solid;
-          }
-          tbody {
-              border: blue 5px solid;
-          }
-        </style>
-        <table WIDTH="80%" HEIGHT="20%" style="text-align: center">
-            <thead class="table-dark">
-                <tr >
-                  <th style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">Vehículo abandonado</th>
-                  <th style="background: rgba(0, 211, 255, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">Vehículo reportado</th>
-                  <th style="background: rgba(255, 99, 71, 0.6); border: 1px solid rgba(100, 200, 0, 0.3);">Inspección</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border: white">
-                  <td style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-success">revisar</button>
-                  </td>
-                  <td style="background: rgba(0, 211, 255, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-primary">revisar</button>
-                  </td>
-                  <td style="background: rgba(255, 99, 71, 0.6); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-danger">revisar</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-success">revisar</button>
-                  </td>
-                  <td style="background: rgba(0, 211, 255, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-primary">revisar</button>
-                  </td>
-                  <td style="background: rgba(255, 99, 71, 0.6); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-danger">revisar</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="background: rgba(128, 255, 0, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-success">revisar</button>
-                  </td>
-                  <td style="background: rgba(0, 211, 255, 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-primary">revisar</button>
-                  </td>
-                  <td style="background: rgba(255, 99, 71, 0.6); border: 1px solid rgba(100, 200, 0, 0.3);">folio: , Nombre: , estatus
-                    <br>
-                    <button type="button" class="btn btn-outline-danger">revisar</button>
-                  </td>
-                </tr>
-            </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- about section -->
+    <script src="components/show-info.js"></script>
+  </div>
 
   
+  <!-- FORM-USER -->
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center">Iniciar Reporte</h2>
+                <div class="form-group">
+                    <label for="nombreUsuario">Nombre del Usuario</label>
+                    <input type="text" class="form-control" id="nombreUsuario" placeholder="Policia encargado del reporte" required>
+                </div>
+                <div class="form-group">
+                    <label for="motivo">Motivo</label>
+                    <input type="text" class="form-control" id="motivo" placeholder="Escribe el motivo del reporte"  required>
+                </div>
+                <div class="form-group">
+                    <label for="numeroIdentificador">Número de Identificador del vehiculo</label>
+                    <input type="text" class="form-control" id="numeroIdentificador" placeholder="Escribe tu número de identificador (VIN)" required>
+                </div>
+                <button class="btn btn-primary" onclick="validarFormulario()">Aceptar</button>
+        </div>
+    </div>
+</div>
+
+  <!-- FORM-USER -->
+
+
+  <!-- about section -->
+  <br><br><br>
 
   <section class="contact_section layout_padding">
     
@@ -293,11 +246,7 @@ Con nuestras acciones, día con día promovemos el Civismo Digital en la Ciudad,
   </section>
 
   <!-- end info_section -->
-
-  
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
 
 </body>
 
